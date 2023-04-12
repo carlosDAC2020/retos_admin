@@ -1,0 +1,206 @@
+/* estylos de a base de la pagina ---------------------------------------------------*/
+
+body {
+  font-family: "Batrice", sans-serif;
+  background: #DBDBDB;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Batrice Bold', sans-serif;
+}
+
+p, span, label, input, button, a {
+  font-family: 'Batrice-Regular', sans-serif;
+}
+
+
+.nav-container {
+  width: 15%;
+  float: left;
+  
+  left: 0; /* Alinear la barra de navegación a la izquierda */
+  top: 0; /* Alinear la barra de navegación en la parte superior */
+  display: flex;
+  flex-direction: column;
+  /*justify-content: flex-end;*/
+  /*align-items: flex-start;*/
+  padding: 12px 10px 10px;
+  gap: 10px;
+  isolation: isolate;
+
+  
+  justify-content: flex-start;
+  align-items: center;
+
+  position: fixed;
+  /*width: 249px;*/
+  height: 100vh;
+
+  background: #174E4F;
+}
+
+.nav-container .row {
+  /* Expandimos la fila en el espacio sobrante */
+  flex-grow: 1;
+}
+
+.nav-container ul {
+  /* Ajustamos el espaciado y la apariencia de la lista */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container li {
+  /* Añadimos espaciado y estilos a los botones */
+  margin-bottom: 5px;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-container img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-nav{
+  background: #174E4F;
+  width: 229px;
+  height: 40px;
+  border: 1px solid #F6FCDF;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.btn-nav:hover{
+  background: #4EC47E;
+  transition: background 0.3s ease;
+}
+
+.btn-item{
+  background: #174E4F;
+  width: 229px;
+  height: 40px;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  justify-content: center;
+  align-items: center;
+}
+.btn-item:hover{
+  background: #4EC47E;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+
+.help{
+  background: #4EC47E;
+  width: 229px;
+  height: 40px;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  justify-content: center;
+  align-items: center;
+}
+.help:hover{
+  background: #2e9557;
+  transition: background 0.3s ease;
+}
+
+.nav-titles{
+  width: 183px;
+  height: 22px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+
+
+
+
+.section-container {
+  margin-left: 249px; 
+}
+
+.form-control {
+  font-size: 0.9rem; /* Reducimos el tamaño de la fuente de los inputs */
+}
+
+.form-control-sm {
+  padding: 0.25rem 0.5rem; /* Reducimos el padding vertical y horizontal */
+}
+
+@media (min-width: 576px) {
+  .col-sm-4 {
+    flex: 0 0 33.33333%; /* Ajustamos el ancho de las columnas en dispositivos pequeños */
+    max-width: 33.33333%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #174e4f; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff8f00; /* Color del "pulgar" de la barra de desplazamiento */
+}
+
+
+/* seccion de retos -----------------------------------------------------------------*/
+.heder_page{
+
+  width: 100%;
+  height: 111px;
+  left: 249px;
+  top: 0px;
+
+  /* Blanco */
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+

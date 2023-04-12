@@ -1,0 +1,51 @@
+
+
+.body_login {
+    background: linear-gradient(to bottom, #174e4f, #4ec47e); /* Fondo degradado desde arriba hacia abajo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  
+    height: 100%; 
+    overflow-y: scroll;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #174e4f; /* Color de fondo de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff8f00; /* Color del "pulgar" de la barra de desplazamiento */
+  }
+  
+  
+  .container_login {
+    margin-bottom: 0;
+  }
+  
+  .container_login {
+    padding-top: 50px;
+  }
+  
+  .form_login {
+    background-color: rgba(227, 237, 228, 0.988);
+  }
+  
+  
+  .bty {
+    background-color: #ff8f00;
+    transition: background-color 0.5s ease; /* Transición suave del color de fondo */
+  }
+  
+  .bty:hover {
+    background-color: #fdac32; /* Color de fondo con menor intensidad */
+  }
+  
+
+
+  

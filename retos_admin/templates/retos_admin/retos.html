@@ -1,0 +1,166 @@
+{% extends "retos_admin/base_home_admin.html" %}
+
+{% block page_content %}
+  
+  <header class="d-flex justify-content-between ">
+    <h2 class="m-0">Listado de retos</h2>
+    <button class="btn btn-primary" type="button">
+      <i class="bi bi-plus-lg"></i> Crear texto
+    </button>
+  </header>
+
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Columna 1</h3>
+      <p>Contenido columna 1</p>
+    </div>
+    <div class="col-md-3">
+      <h3>Columna 2</h3>
+      <p>Contenido columna 2</p>
+    </div>
+    <div class="col-md-3">
+      <h3>Columna 3</h3>
+      <p>Contenido columna 3</p>
+    </div>
+    <div class="col-md-3">
+      <h3>Columna 4</h3>
+      <p>Contenido columna 4</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <form class="form-inline">
+        <div class="container">
+          <form class="form-inline">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control mx-3" id="nombre">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="fecha_inicio">Fecha inicio:</label>
+                  <input type="date" class="form-control mx-3" id="fecha_inicio">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="fecha_fin">Fecha fin:</label>
+                  <input type="date" class="form-control mx-3" id="fecha_fin">
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary mr-3">Buscar</button>
+                  <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Fecha de nacimiento</th>
+            <th>País</th>
+            <th>Ciudad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>25</td>
+            <td>01/01/1997</td>
+            <td>Argentina</td>
+            <td>Buenos Aires</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>María</td>
+            <td>García</td>
+            <td>30</td>
+            <td>02/02/1992</td>
+            <td>Colombia</td>
+            <td>Bogotá</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>González</td>
+            <td>42</td>
+            <td>03/03/1979</td>
+            <td>México</td>
+            <td>México DF</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>González</td>
+            <td>42</td>
+            <td>03/03/1979</td>
+            <td>México</td>
+            <td>México DF</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>González</td>
+            <td>42</td>
+            <td>03/03/1979</td>
+            <td>México</td>
+            <td>México DF</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>González</td>
+            <td>42</td>
+            <td>03/03/1979</td>
+            <td>México</td>
+            <td>México DF</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>González</td>
+            <td>42</td>
+            <td>03/03/1979</td>
+            <td>México</td>
+            <td>México DF</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pedro</td>
+            <td>González</td>
+            <td>42</td>
+            <td>03/03/1979</td>
+            <td>México</td>
+            <td>México DF</td>
+          </tr>
+          <!-- y así sucesivamente... -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+{% endblock %}
+
