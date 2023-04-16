@@ -18,7 +18,7 @@
     <!-- formulario de login -->
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-md-10 mx-auto col-lg-5 d-flex align-items-center justify-content-center flex-column">
-        <img src="{% static 'logos/RETOS_Logo_Slogan-10.png' %}" alt="" class="logo_login mb-4" style="max-width: 40%; max-height: 40%;">
+        <img src="{% static 'logos/logo.png' %}" alt="" class="logo_login mb-4" style="max-width: 40%; max-height: 40%;">
         <form action="{% url 'retos_admin:login' %}" method="post" class="p-4 p-md-5  rounded-4 form_login">
           <!-- alerta de credenciales incorrectas -->
           {% if mensaje %}

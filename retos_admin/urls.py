@@ -7,4 +7,5 @@ app_name="retos_admin"
 urlpatterns = [
     path('', views.index, name="index"),
     path('login/', views.login_admin, name="login"),
+    path('create_retos/', views.create_retos, name="create_retos")
 ]

@@ -1,10 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.contrib.auth import authenticate, login
 
-def index(request):
-    return render(request, "retos_admin/retos.html",{
-        "seccion":"Lista de Retos"
-    })
 
 
 def login_admin(request):
@@ -19,3 +15,16 @@ def login_admin(request):
             return render(request, 'retos_admin/login.html', {'mensaje': 'Credenciales Invalidas'})
     else:
         return render(request, 'retos_admin/login.html')
+
+
+
+def index(request):
+    return render(request, "retos_admin/retos.html",{
+        "seccion":"Lista de Retos"
+    })
+
+def create_retos(request):
+    if request.method == 'POST':
+        return HttpResponse("reto creado")
+    else:
+        return render(request, 'retos_admin/create_retos.html')
