@@ -427,7 +427,7 @@ header a {
 }
 
 /* tablas */
-table tbody tr td:first-child{
+table tbody tr td:nth-child(1){
   color: #4EC47E;
 }
 table thead tr th{
