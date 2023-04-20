@@ -1,0 +1,91 @@
+{% extends "retos_admin/base_home_admin.html" %}
+
+{% block page_content %}
+  
+    <header class="d-flex justify-content-between w-100 heder_page">
+        <a href="{% url 'retos_admin:instituciones' %}"><div class="btn-back">&lt;</div></a>
+        <h2>Instituciones</h2>
+        <a href="{% url 'retos_admin:retos_detail' %}">
+            <button class="btn-save-reto">Guardar</button>
+        </a>
+        
+    </header>
+
+    <div class="container p-5">
+
+        <div class="row justify-content-center align-items-center h-100">
+
+            <div class="col-md-10">
+
+                    <!-- campos de imagen nombre titulo creador fecha y estado  -->
+                    <div class="row h-100">
+
+                        <div class="col-md-12 bg-white shadow-sm rounded p-5 mb-4" style="width: 1223px; height: 257px; left: 269px; top: 136px; background: #FFFFFF; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); border-radius: 8px;">
+                            
+                            <div class="row h-100 gx-4">
+
+                                <div class="col-md-2 rounded p-5 mb-4 d-flex justify-content-center align-items-center" style="height: 165px;  border-radius: 8px background: #C1C1C1;">
+                                    <input type="file" name="documento1" id="documento1" style="display:none;">
+                                    <label for="documento1" style="display: flex; flex-direction: column; align-items: center;">
+                                        <i class="bi bi-image" style="font-size: 7rem;"></i>
+                                    </label>
+                                </div>
+
+                                <div class="col-md-10 bg-white rounded p-5 mb-4" style="height: 165px; background: #FFFFFF;  border-radius: 8px;">
+                                    
+                                        <!-- Título -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-4 mb-2">
+                                            <input type="text" class="form-control " id="nombre" placeholder="Nombre">
+                                        </div>
+                                    </div>
+
+                                    <div class="row ">
+
+                                        <div class="col-md-6 mb-2">
+                                            <label for="nombre" class="mb-2" >Pagina Web</label>
+                                            <input type="text" class="form-control " id="nombre" placeholder="Https//">
+                                        </div>
+
+                                        <div class="col-md-6 mb-2">
+                                            <label for="estado" class="mb-2" >localizacion</label>
+                                            <input type="text" class="form-control " id="nombre" placeholder="Bogota">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- campos de texto largo  -->
+                    <div class="row h-100">
+
+                        <div class="col-md-12 bg-white shadow-sm rounded p-5 mb-4" style="width: 1121px; height: 261px; left: 320px; top: 829px; background: #FFFFFF; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); border-radius: 8px;">
+
+                            <div class="row ">
+                                <div class="col-md-12 mb-4">
+                                    <label for="text-area-1" class="mb-2 fr">
+                                        Acerca de la institucion
+                                    </label>
+                                    <textarea id="text-area-1" class="form-control" style="box-sizing: border-box; display: flex; flex-direction: row; align-items: flex-start; padding: 12px 16px; gap: 10px;  height: 129px; background: #F2F2F2; border: 2px solid #E6E6E6; border-radius: 10px; flex: none; order: 1; align-self: stretch; flex-grow: 1;"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+      
+    
+{% endblock %}
+
