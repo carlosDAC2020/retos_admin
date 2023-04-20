@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="{% static 'logos/RETOS_Logo_Slogan-10.png' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/css/admin.css' %}">
     <title>Admin Retos</title>
   </head>
 
@@ -43,43 +43,26 @@
               <div class="col text-center">
                 <h4 class="nav-titles p-2">RETOS Y AGENTES</h4>
                 <ul>
-                  <a href="{% url 'retos_admin:index' %}">
-                    <li class="btn-item ">
+                  <li class="btn-item">
                       <i class="bi bi-file-earmark-medical"></i>
                       Retos
-                    </li>
-                  </a>
-                  
-
-                  <a href="{% url 'retos_admin:comunidades' %}">
-                    <li class="btn-item ">
+                  </li>
+                  <li class="btn-item">
                       <i class="bi bi-share"></i>
                       Comunidades
-                    </li>
-                  </a>
-                  
-                   
-                  <a href="{% url 'retos_admin:instituciones' %}">
-                    <li class="btn-item ">
-                      <i class="bi bi-bank"></i>
-                      Instituciones
-                    </li>
-                  </a>
-                  
-                  <a href="{% url 'retos_admin:esp_co_creacion' %}">
-                    <li class="btn-item " >
+                  </li>
+                  <li class="btn-item" >
                       <i class="bi bi-geo-alt"></i>
                       Espacios de Co-creacion
-                    </li> 
-                  </a>
-
-                  <a href="{% url 'retos_admin:participantes' %}">
-                    <li class="btn-item ">
+                  </li>  
+                  <li class="btn-item">
+                      <i class="bi bi-bank"></i>
+                      Instituciones
+                  </li>
+                  <li class="btn-item">
                       <i class="bi bi-people"></i>
                       Participantes
-                    </li>
-                  </a>
-                  
+                  </li>
                 </ul>
               </div>
             </div>
@@ -89,11 +72,11 @@
               <div class="col text-center">
                 <h4 class="nav-titles p-3">Administracion</h4>
                 <ul>
-                  <li class="btn-item ">
+                  <li class="btn-item">
                       <i class="bi bi-body-text"></i>
                       Contenido Web
                   </li>
-                  <li class="btn-item ">
+                  <li class="btn-item">
                       <i class="bi bi-gear"></i>
                       Configuracion
                   </li>
