@@ -79,8 +79,12 @@
                   <!-- cabecera de la rabla  -->
                   <thead>
           
-                    <tr>
-                      <th scope="col">ID</th>
+                    <tr style="border-width: 0px 0px 2px 0px; border-color: #4EC47E;
+                    ">
+                      <th scope="col">
+                        <input type="checkbox" name="" id="">
+                        ID
+                      </th>
                       <th scope="col">institucion</th>
                       <th scope="col">Tipo de institucion</th>
                       <th scope="col">Fecha de Creacion</th>
@@ -92,7 +96,10 @@
                   {% for i in instituciones %}
                     <tbody>
                       <tr>
-                        <th scope="row">{{i}}</th>
+                        <th scope="row">
+                          <input type="checkbox" name="" id="">
+                          {{i}}
+                        </th>
                         <td>institucion {{i}}</td>
                         <td>Universidad</td>
                         <td>07-04-2023</td>
