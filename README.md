@@ -5,7 +5,11 @@
 - clonar el repositorio
 - Crear un entorno virtual en la carpeta del repositorio (**RECOMENDABLE**) 
  
-          `$ py -m venv venv`
+          `$ py -m venv venv` 
+     
+- entrar al entorno virtual 
+     
+     `$ .\venv\scripts\activate`
 
 - Instalar las dependencias del proyecto ubicadas 
 
