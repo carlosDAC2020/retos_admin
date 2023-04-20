@@ -1,17 +1,17 @@
 /* estylos de a base de la pagina ---------------------------------------------------*/
 
 body {
-  font-family: "Batrice", sans-serif;
+  /*font-family: "Batrice", sans-serif;*/
+  font-family: "inter", sans-serif;
   background: #f4f4f4;
-  
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Batrice Bold', sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 p, span, label, input, button, a {
-  font-family: 'Batrice-Regular', sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 a {
