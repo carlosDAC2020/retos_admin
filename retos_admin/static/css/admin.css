@@ -539,3 +539,13 @@ table thead tr th{
 }
 
 
+@media (min-width: 1400px){
+  .container{
+    max-width: 100%;
+  }
+}
+
+.section-container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
