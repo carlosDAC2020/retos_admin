@@ -92,8 +92,12 @@
 
                   <thead>
           
-                    <tr>
-                      <th scope="col">ID</th>
+                    <tr style="border-width: 0px 0px 2px 0px; border-color: #4EC47E;
+                    ">
+                      <th scope="col">
+                        <input type="checkbox" name="" id="">
+                        ID
+                      </th>
                       <th scope="col">Comunidad</th>
                       <th scope="col">Cantidad de retos</th>
                       <th scope="col">Evaluacion acumulado retos</th>
@@ -104,24 +108,53 @@
           
                   </thead>
                   {% for i in comunidades %}
-                    <tbody>
-                      <tr>
-                        <th scope="row">{{i}}</th>
-                        <td>comunidad</td>
-                        <td>3</td>
-                        <td>5</td>
-                        <td>7</td>
-                        <td>Bogota</td>
-                        <td>
-                          <a href="#">
-                            <i class="bi bi-pencil-square text-success" style=" color: #174E4F ; "></i>
-                          </a>
-                          <a href="#">
-                            <i class="bi bi-trash text-danger" style="color: #174E4F;"></i>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
+
+                    {% if i%2==0 %}
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" name="" id="">
+                            {{i}}
+                          </th>
+                          <td>comunidad</td>
+                          <td class="tab-center">3</td>
+                          <td class="tab-center">5</td>
+                          <td class="tab-center">7</td>
+                          <td>Bogota</td>
+                          <td>
+                            <a href="#">
+                              <i class="bi bi-pencil-square text-success" style=" color: #174E4F ; "></i>
+                            </a>
+                            <a href="#">
+                              <i class="bi bi-trash text-danger" style="color: #174E4F;"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    {% else %}
+                      <tbody style=" background: #FFFFFF;">
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" name="" id="">
+                            {{i}}
+                          </th>
+                          <td>comunidad</td>
+                          <td class="tab-center">3</td>
+                          <td class="tab-center">5</td>
+                          <td class="tab-center">7</td>
+                          <td>Bogota</td>
+                          <td>
+                            <a href="#">
+                              <i class="bi bi-pencil-square text-success" style=" color: #174E4F ; "></i>
+                            </a>
+                            <a href="#">
+                              <i class="bi bi-trash text-danger" style="color: #174E4F;"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    {% endif %}
+                    
                   {% endfor %}
                   
                 </table>

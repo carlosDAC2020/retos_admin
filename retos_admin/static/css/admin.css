@@ -436,6 +436,9 @@ table thead tr th{
 .table{
   margin-top: 80px;
 }
+.tab-center{
+  text-align: center;
+}
 
 /* seccion de creacion de retos ---------------------------*/
 .fr{
