@@ -98,7 +98,7 @@ a {
   gap: 10px;
   
   background: #174E4F;
-  width: 229px;
+  width: 180px;
   height: 40px;
   box-sizing: border-box;
 
@@ -424,6 +424,14 @@ header a {
   border: 2px solid #4EC47E;
   border-radius: 10px;
   flex-grow: 0;
+}
+
+/* tablas */
+table tbody tr td:first-child{
+  color: #4EC47E;
+}
+table thead tr th{
+  color: #174E4F;
 }
 
 /* seccion de creacion de retos ---------------------------*/
