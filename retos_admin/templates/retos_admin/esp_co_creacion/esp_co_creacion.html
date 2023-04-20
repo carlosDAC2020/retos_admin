@@ -1,0 +1,114 @@
+{% extends "retos_admin/base_home_admin.html" %}
+
+{% block page_content %}
+  
+<header class="d-flex justify-content-between w-100 heder_page">
+
+  
+  <h1>Espacion de Co-creacion</h1>
+  <a href="{% url 'retos_admin:create_esp_co_creacion' %}"><button class="btn-create-reto"><i class="bi bi-plus-square-fill"></i> Crear</a></button></a>
+  
+</header>
+
+<div class="container p-5">
+
+  <div class="row justify-content-center align-items-center h-100">
+
+      <div class="col-md-10">
+
+              
+            <div class="row h-100">
+
+                <div class="col-md-12 rounded p-5 mb-4" style="width: 1123px; height: 165px; left: 320px; top: 627px; border-radius: 8px;">
+                    
+                    <div class="row fr">
+
+                        <div class="col-md-4 mb-2 w-100">
+
+                            <div class="row ">
+
+                                <div class="col-md-8">
+                                  <input type="text" class="form-select impt" id="estado" placeholder="Asociacion de floricultores de Cundinamaeca">
+                                </div>
+
+                                <div class="col-md-4 d-flex">
+                                    <button style="box-sizing: border-box;
+                                    width: 115px;
+                                    height: 44px;
+                                    left: 672px;
+                                    top: 359px;
+                                    
+                                    /* Primario */
+                                    
+                                    background: #4EC47E;
+                                    color: #FFFFFF;
+                                    /* Primario */
+                                    
+                                    border: 2px solid #4EC47E;
+                                    border-radius: 10px;">
+                                    <i class="bi bi-search"></i>Buscar</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="row h-100">
+
+              
+                  
+              <table class="table">
+
+                <!-- cabecera de la rabla  -->
+                <thead>
+        
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Institucion</th>
+                    <th scope="col">Fecha de Creacion</th>
+                    <th scope="col"></th>
+                  </tr>
+        
+                </thead>
+
+                {% for i in esp_co_creacion %}
+                  <tbody>
+                    <tr>
+                      <th scope="row">{{i}}</th>
+                      <td>espacion de cocreacion {{i}}</td>
+                      <td>Universidad {{i}}</td>
+                      <td>07-04-2023</td>
+                      <td>
+                        <a href="#">
+                          <i class="bi bi-pencil-square text-success"></i>
+                        </a>
+                        <a href="#">
+                          <i class="bi bi-trash text-danger"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                {% endfor %} 
+        
+              </table>
+                  
+             
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+
+{% endblock %}
+

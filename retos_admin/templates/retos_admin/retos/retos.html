@@ -1,0 +1,145 @@
+{% extends "retos_admin/base_home_admin.html" %}
+
+{% block page_content %}
+  
+  <header class="d-flex justify-content-between w-100 heder_page">
+
+    
+    <h1 >Retos</h1>
+    <a href="{% url 'retos_admin:create_retos' %}"><button class="btn-create-reto"><i class="bi bi-plus-square-fill"></i> Crear reto</a></button></a>
+    
+  </header>
+
+  <!-- Contador -->
+  <div class="row w-100 counter">
+
+      <div class="col-md-3 cont">
+        <h1>203</h1>
+        <div></div>
+        <p>Retos totales</p>
+      </div>
+
+      <div class="col-md-3 cont">
+        <h1>33</h1>
+        <div></div>
+        <p>Retos activos</p>
+      </div>
+
+      <div class="col-md-3 cont">
+        <h1>26</h1>
+        <div></div>
+        <p>Retos disponibles</p>
+      </div>
+
+      <div class="col-md-3 cont">
+        <h1>144</h1>
+        <div></div>
+        <p>Retos completados</p>
+      </div>
+
+  </div>
+
+
+  <div class="container p-5">
+
+    <div class="row justify-content-center align-items-center h-100">
+
+        <div class="col-md-10">
+
+                
+              <div class="row h-100">
+
+                  <div class="col-md-12 rounded p-5 mb-4" style="width: 1123px; height: 165px; left: 320px; top: 627px; border-radius: 8px;">
+                      
+                      <div class="row fr">
+
+                          <div class="col-md-4 mb-2 w-100">
+
+                              <div class="row ">
+
+                                  <div class="col-md-8">
+                                    <input type="text" class="form-select impt" id="estado" placeholder="Asociacion de floricultores de Cundinamaeca">
+                                  </div>
+
+                                  <div class="col-md-4 d-flex">
+                                      <button style="box-sizing: border-box;
+                                      width: 115px;
+                                      height: 44px;
+                                      left: 672px;
+                                      top: 359px;
+                                      
+                                      /* Primario */
+                                      
+                                      background: #4EC47E;
+                                      color: #FFFFFF;
+                                      /* Primario */
+                                      
+                                      border: 2px solid #4EC47E;
+                                      border-radius: 10px;">
+                                      <i class="bi bi-search"></i>Buscar</button>
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+                      
+                  </div>
+
+              </div>
+
+              <div class="row h-100">
+
+                
+                    
+                  <table class="table">
+
+                    <!-- cabecera de la rabla  -->
+                    <thead>
+            
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Reto</th>
+                        <th scope="col">Encuestas finales faltantes</th>
+                        <th scope="col">Campos faltantes</th>
+                        <th scope="col">Evaluación</th>
+                        <th scope="col">Implementación</th>
+                        <th scope="col"></th>
+                      </tr>
+            
+                    </thead>
+            
+                    {% for i in retos %}
+                    <tbody>
+                      <tr>
+                        <th scope="row">{{i}}</th>
+                        <td>nombre</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>
+                          <a href="#">
+                            <i class="bi bi-pencil-square text-success"></i>
+                          </a>
+                          <a href="#">
+                            <i class="bi bi-trash text-danger"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  {% endfor %}
+                    
+               
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

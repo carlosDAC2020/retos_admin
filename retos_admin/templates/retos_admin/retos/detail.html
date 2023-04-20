@@ -1,0 +1,105 @@
+{% extends "retos_admin/base_home_admin.html" %}
+
+{% block page_content %}
+  
+    <header class="d-flex justify-content-between w-100 heder_page">
+       
+        <h2>Retos</h2>
+       
+    </header>
+
+    <div class="container p-5">
+
+        <div class="row justify-content-center align-items-center h-100">
+
+            <div class="col-md-10">
+
+                    <!-- campos de imagen nombre titulo creador fecha y estado  -->
+                    <div class="row h-100">
+
+                        <div class="col-md-12 bg-white shadow-sm rounded p-5 mb-4" style="width: 1223px; height: 257px; left: 269px; top: 136px; background: #FFFFFF; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); border-radius: 8px;">
+                            
+                            <div class="row h-100 gx-4">
+
+                                <div class="col-md-2 rounded p-5 mb-4 d-flex justify-content-center align-items-center" style="height: 165px;  border-radius: 8px background: #C1C1C1;">
+                                    <i class="bi bi-image"  style="font-size: 7rem;"></i>
+                                </div>
+
+                                <div class="col-md-10 bg-white rounded p-5 mb-4" style="height: 165px; background: #FFFFFF;  border-radius: 8px;">
+                                    
+                                        <!-- Título -->
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h2 style="font-style: normal;font-weight: 700;font-size:20px;line-height: 16px;color: #174E4F;">Titulo de la imagen</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="row ">
+
+                                        <div class="col-md-4 mb-2">
+                                            <label for="nombre" class="mb-2" >Creado por</label>
+                                            <h2 style="font-style: normal;font-weight: 700;font-size:20px;line-height: 16px;color: #174E4F;">Diana Duarte</h2>
+                                        </div>
+
+                                        <div class="col-md-4 mb-2">
+                                            <label for="fecha" class="mb-2" >Fecha de creación</label>
+                                            <h2 style="font-style: normal;font-weight: 700;font-size:20px;line-height: 16px;color: #174E4F;">03/07/2023</h2>
+                                        </div>
+
+                                        <div class="col-md-4 mb-2">
+                                            <label for="estado" class="mb-2" >Estado</label>
+                                            <h2 style="font-style: normal;font-weight: 700;font-size:20px;line-height: 16px;color: #174E4F;">Disponible</h2>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="row h-100">
+
+                        <div class="col-md-12 bg-white shadow-sm rounded p-5 mb-4" style="width: 1123px; height: 165px; left: 320px; top: 627px; background: #FFFFFF; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); border-radius: 8px;">
+                            
+                            <div class="row fr">
+
+                                <div class="col-md-4 mb-2 w-100">
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <label for="nombre" class="mb-2" >Creado por</label>
+                                            <input type="text" class="form-control " id="nombre" placeholder="Ingrese el nombre del creador">
+                                        </div>
+
+                                        <div class="col-md-6 mb-2">
+                                            <label for="nombre" class="mb-2" >Creado por</label>
+                                            <input type="text" class="form-control " id="nombre" placeholder="Ingrese el nombre del creador">
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+      
+    
+{% endblock %}
+

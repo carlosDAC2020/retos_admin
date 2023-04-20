@@ -116,6 +116,8 @@ a {
   border-radius: 10px;
   transition: background 0.3s ease;
 }
+
+
 .help{
 
   background: #4EC47E;
@@ -240,15 +242,21 @@ header a {
 
 
 .heder_page h1{
-  position: absolute;
-  width: 259px;
+  
+  width: 347px;
   height: 16px;
-  padding-left: 68px;
+  left: 268px;
   top: 64px;
+
+  
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 16px;
+  /* identical to box height, or 80% */
+
+
+  /* Primario oscuro */
 
   color: #174E4F;
 }
@@ -382,6 +390,42 @@ header a {
   width: 10px;
 }
 
+.filter_imput{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+  width: 366px;
+  height: 44px;
+  background: #F2F2F2;
+  border: 2px solid #E6E6E6;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+}
+
+.filter_btn{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  position: absolute;
+  width: 115px;
+  height: 44px;
+  left: 672px;
+  top: 359px;
+  background: #4EC47E;
+  border: 2px solid #4EC47E;
+  border-radius: 10px;
+  flex-grow: 0;
+}
+
 /* seccion de creacion de retos ---------------------------*/
 .fr{
   font-style: normal;
@@ -445,3 +489,29 @@ header a {
   align-self: stretch;
   flex-grow: 0;
 }
+
+.btn_add_institucion{
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  width: 178px;
+  height: 40px;
+  left: 786px;
+  top: 918px;
+
+  /* Primario */
+
+  background: #4EC47E;
+  /* Primario */
+
+  border: 2px solid #4EC47E;
+  border-radius: 10px;
+}
+

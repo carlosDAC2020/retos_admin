@@ -43,26 +43,43 @@
               <div class="col text-center">
                 <h4 class="nav-titles p-2">RETOS Y AGENTES</h4>
                 <ul>
-                  <li class="btn-item">
+                  <a href="{% url 'retos_admin:index' %}">
+                    <li class="btn-item ">
                       <i class="bi bi-file-earmark-medical"></i>
                       Retos
-                  </li>
-                  <li class="btn-item">
+                    </li>
+                  </a>
+                  
+
+                  <a href="{% url 'retos_admin:comunidades' %}">
+                    <li class="btn-item ">
                       <i class="bi bi-share"></i>
                       Comunidades
-                  </li>
-                  <li class="btn-item" >
-                      <i class="bi bi-geo-alt"></i>
-                      Espacios de Co-creacion
-                  </li>  
-                  <li class="btn-item">
+                    </li>
+                  </a>
+                  
+                   
+                  <a href="{% url 'retos_admin:instituciones' %}">
+                    <li class="btn-item ">
                       <i class="bi bi-bank"></i>
                       Instituciones
-                  </li>
-                  <li class="btn-item">
+                    </li>
+                  </a>
+                  
+                  <a href="{% url 'retos_admin:esp_co_creacion' %}">
+                    <li class="btn-item " >
+                      <i class="bi bi-geo-alt"></i>
+                      Espacios de Co-creacion
+                    </li> 
+                  </a>
+
+                  <a href="{% url 'retos_admin:participantes' %}">
+                    <li class="btn-item ">
                       <i class="bi bi-people"></i>
                       Participantes
-                  </li>
+                    </li>
+                  </a>
+                  
                 </ul>
               </div>
             </div>
@@ -72,11 +89,11 @@
               <div class="col text-center">
                 <h4 class="nav-titles p-3">Administracion</h4>
                 <ul>
-                  <li class="btn-item">
+                  <li class="btn-item ">
                       <i class="bi bi-body-text"></i>
                       Contenido Web
                   </li>
-                  <li class="btn-item">
+                  <li class="btn-item ">
                       <i class="bi bi-gear"></i>
                       Configuracion
                   </li>
