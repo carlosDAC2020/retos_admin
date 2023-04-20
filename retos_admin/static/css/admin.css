@@ -433,6 +433,9 @@ table tbody tr td:first-child{
 table thead tr th{
   color: #174E4F;
 }
+.table{
+  margin-top: 80px;
+}
 
 /* seccion de creacion de retos ---------------------------*/
 .fr{
