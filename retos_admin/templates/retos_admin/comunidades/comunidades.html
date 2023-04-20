@@ -109,7 +109,7 @@
                   </thead>
                   {% for i in comunidades %}
 
-                    {% if i%2==0 %}
+                    {
                       <tbody>
                         <tr>
                           <th scope="row">
@@ -131,28 +131,7 @@
                           </td>
                         </tr>
                       </tbody>
-                    {% else %}
-                      <tbody style=" background: #FFFFFF;">
-                        <tr>
-                          <th scope="row">
-                            <input type="checkbox" name="" id="">
-                            {{i}}
-                          </th>
-                          <td>comunidad</td>
-                          <td class="tab-center">3</td>
-                          <td class="tab-center">5</td>
-                          <td class="tab-center">7</td>
-                          <td>Bogota</td>
-                          <td>
-                            <a href="#">
-                              <i class="bi bi-pencil-square text-success" style=" color: #174E4F ; "></i>
-                            </a>
-                            <a href="#">
-                              <i class="bi bi-trash text-danger" style="color: #174E4F;"></i>
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
+                    
                     {% endif %}
                     
                   {% endfor %}
