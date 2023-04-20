@@ -427,7 +427,10 @@ header a {
 }
 
 /* tablas */
-table tbody tr td:nth-child(1){
+.table td:last-child {
+  display: flex;
+}
+.table td:nth-child(2) {
   color: #4EC47E;
 }
 table thead tr th{
@@ -444,6 +447,7 @@ table thead tr th{
 .tab-center{
   text-align: center;
 }
+
 
 /* seccion de creacion de retos ---------------------------*/
 .fr{
