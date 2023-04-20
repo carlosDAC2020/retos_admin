@@ -32,7 +32,7 @@ a {
 }
 
 .section-container {
-  background: #DBDBDB;
+  background: #F4F6F8;
   margin-left: 270px;
   width: calc(100% - 270px);
   overflow-y: scroll;
@@ -435,6 +435,11 @@ table thead tr th{
 }
 .table{
   margin-top: 80px;
+  font-family: inter;
+  color: #666666;
+}
+.table>tbody:nth-child(even) {
+  background-color: #FFFFFF;
 }
 .tab-center{
   text-align: center;
@@ -528,4 +533,5 @@ table thead tr th{
   border: 2px solid #4EC47E;
   border-radius: 10px;
 }
+
 
