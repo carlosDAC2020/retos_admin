@@ -334,7 +334,7 @@ header a {
   color: #174E4F;
 }
 .cont p{
-  width: 134px;
+  /*width: 134px;*/
   height: 52px;
   left: 1068px;
   top: 227px;
@@ -568,6 +568,6 @@ table thead tr th{
 }
 
 .table>tbody th input:checked {
-  background-color: blue;
-  border-color: blue;
+  background-color:#70c27f;
+  border-color: #70c27f;
 }
