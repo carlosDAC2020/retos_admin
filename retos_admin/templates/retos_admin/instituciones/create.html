@@ -66,7 +66,7 @@
                      
                      <div class="row h-100">
 
-                        <div class="col-md-12 bg-white shadow-sm rounded p-5 mb-4" style="width: 1223px; height: 257px; left: 269px; top: 136px; background: #FFFFFF; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); border-radius: 8px;">
+                        <div class="col-md-12 bg-white shadow-sm rounded p-5 mb-4" style="width: 1223px; height: 187px; left: 269px; top: 136px; background: #FFFFFF; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); border-radius: 8px;">
 
                             <style>
                                 .bi-image:hover {
@@ -76,9 +76,8 @@
                        
                             <div class="row fr">
 
-                                <label for="estado" class="mb-2">Galeria</label>
 
-                                <div class="col-md-3 rounded p-5 mb-4 d-flex justify-content-center align-items-center sub_img" style="height: 165px;  border-radius: 28px;">
+                                <div class="col-md-4 rounded p-5 mb-4 d-flex justify-content-center align-items-center sub_img" style="height: 165px;  border-radius: 28px;">
                                     <input type="file" name="documento1" id="documento1" style="display:none;">
                                     <label for="documento1" style="display: flex; flex-direction: column; align-items: center;">
                                         <i class="bi bi-image" style="font-size: 7rem;"></i>
@@ -86,7 +85,7 @@
                                     </label>
                                 </div>
 
-                                <div class="col-md-3 rounded p-5 mb-4 d-flex justify-content-center align-items-center sub_img" style="height: 165px;  border-radius: 50px;">
+                                <div class="col-md-4 rounded p-5 mb-4 d-flex justify-content-center align-items-center sub_img" style="height: 165px;  border-radius: 50px;">
                                     <input type="file" name="documento2" id="documento2" style="display:none;">
                                     <label for="documento2" style="display: flex; flex-direction: column; align-items: center;">
                                         <i class="bi bi-image" style="font-size: 7rem;"></i>
@@ -94,20 +93,14 @@
                                     </label>
                                 </div>
 
-                                <div class="col-md-3 rounded p-5 mb-4 d-flex justify-content-center align-items-center sub_img" style="height: 165px;  border-radius: 50px;">
-                                    <input type="file" name="documento3" id="documento3" style="display:none;">
-                                    <label for="documento3" style="display: flex; flex-direction: column; align-items: center;">
-                                        <i class="bi bi-image" style="font-size: 7rem;"></i>
-                                        <label>Foto 3</label>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-3 rounded p-5 mb-4 d-flex justify-content-center align-items-center sub_img" style="height: 165px;  border-radius: 50px;">
-                                    <input type="file" name="documento4" id="documento4" style="display:none;">
-                                    <label for="documento4" style="display: flex; flex-direction: column; align-items: center;">
-                                        <i class="bi bi-image" style="font-size: 7rem;"></i>
-                                        <label>Foto 4</label>
-                                    </label>
+                                <div class="col-md-4 mb-4">
+                                            
+                                    <label for="nombre" class="mb-2" >Tipo de Institución</label>
+                                    <select class="form-select impt" id="estado">
+                                        <option value="disponible" selected>gubernamental</option>
+                                        <option value="no disponible">universitaria</option>
+                                    </select>
+                        
                                 </div>
 
                             </div>                            
