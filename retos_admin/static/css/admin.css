@@ -571,3 +571,22 @@ table thead tr th{
   background-color:#70c27f;
   border-color: #70c27f;
 }
+
+.table th input {
+  -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ border: 1px solid gray;
+ width: 15px;
+ height: 15px;
+ outline: none;
+ transition: background-color 0.2s, border-color 0.2s;
+ margin-right: 10px;
+ background-color: #F2F2F2;
+ border: solid 1px #CCCCCC;
+}
+
+.table th input:checked {
+background-color: #70C27F;
+border-color: #70C27F;
+}
