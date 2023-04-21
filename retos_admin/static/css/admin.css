@@ -447,7 +447,9 @@ table thead tr th{
 .tab-center{
   text-align: center;
 }
-
+ textarea{
+  color:#7F7F7F;
+ }
 
 /* seccion de creacion de retos ---------------------------*/
 .fr{
@@ -501,6 +503,7 @@ table thead tr th{
 
   background: #F2F2F2;
   /* Grey/Grey-200 */
+  color:#7F7F7F;
 
   border: 2px solid #E6E6E6;
   border-radius: 10px;
@@ -589,4 +592,12 @@ table thead tr th{
 .table th input:checked {
 background-color: #70C27F;
 border-color: #70C27F;
+}
+
+input::placeholder {
+  color: #7F7F7F;
+}
+
+input[type="date"]::placeholder {
+  color:#7F7F7F;
 }
